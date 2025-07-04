@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slideshow 💫</title>
+  <link rel="stylesheet" href="slideshow.css" />
+</head>
+<body>
+  <!-- Background -->
+  <canvas id="shooting-stars"></canvas>
+  <div class="galaxy-bg"></div>
+  <audio id="bg-music" src="media/Sapphire.mp3" autoplay loop></audio>
+  <audio id="bg-music" src="media/sapphire.mp3" preload="auto"></audio>
+  <!-- Centered Video -->
+  <div class="video-container">
+    <video id="main-video" width="720" height="405" autoplay muted>
+      <source src="video1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Envelope (initially hidden) -->
+  <div id="envelope" class="hidden bounce">
+    <img src="assets/envelope.png" id="env-img" />
+    <p>Click to open 💌</p>
+  </div>
+
+  <!-- Script -->
+  <script src="slideshow.js"></script>
+</body>
+</html>

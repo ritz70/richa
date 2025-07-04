@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Birthday Letter 💖</title>
+  <link rel="stylesheet" href="letter.css" />
+</head>
+<body>
+  <!-- Background Music -->
+  <audio src="media/bg-music.mp3" autoplay loop></audio>
+
+  <!-- Petals & Stickers -->
+  <div class="petal-layer"></div>
+  <div class="sticker-layer"></div>
+  <div id="falling-elements"></div>
+
+  <!-- Envelope -->
+  <div id="envelope" class="bounce">
+    <img src="assets/envelope.png" id="env-img" />
+    <p>Tap to open 💌</p>
+  </div>
+
+  <!-- Letter -->
+  <div id="letter" class="hidden">
+    <div class="message">
+      <h2>Happy Birthday ❤️</h2>
+      <p id="typed-text"></p>
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+      <div class="confetti-container">
+        <div class="confetti pop1 hidden"></div>
+        <div class="confetti pop2 hidden"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="letter.js"></script>
+</body>
+</html>

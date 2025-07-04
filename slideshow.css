@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+/* Galaxy Background Image */
+.galaxy-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/galaxy.jpg') no-repeat center center;
+  background-size: cover; /* 👈 or try 'cover' for fullscreen */
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -2;
+  opacity: 0.95;
+}
+/* Shooting Stars Canvas */
+#shooting-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Video Styling */
+.video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+video {
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+/* Envelope Styling */
+#envelope {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+#env-img {
+  width: 180px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#env-img:hover {
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, -48%); }
+  50% { transform: translate(-50%, -52%); }
+}
